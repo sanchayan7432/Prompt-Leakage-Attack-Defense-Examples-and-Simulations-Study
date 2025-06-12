@@ -5,21 +5,20 @@ This repository implements **PLeak_SecAlign**, an adversarial benchmarking suite
 ---
 ## 📁 Project Structure
 
-PLeak_SecAlign/
-
-        │
-        ├── benchmark_defense_test.py # Main script for evaluating advanced defense
-        ├── advanced_defense.py # Defense module computing metrics and filtering responses
-        │
-        ├── jailbreak_attack.py # Jailbreak prompt generator using shadow model
-        ├── prompt_injection_attack.py # Prompt injection generator
-        ├── roleplay_attack.py # Role-playing prompt attacker
-        ├── hotflip_attack.py # HotFlip-based token perturbation
-        ├── grad_insertion_attack.py # Gradient-guided insertion attacker
-        │
-        ├── shadow_model.py # Shadow model simulating internal LLM prompt exposure
-        │
-        └── README.md # This documentation
+        PLeak_SecAlign/
+                │
+                ├── benchmark_defense_test.py # Main script for evaluating advanced defense
+                ├── advanced_defense.py # Defense module computing metrics and filtering responses
+                │
+                ├── jailbreak_attack.py # Jailbreak prompt generator using shadow model
+                ├── prompt_injection_attack.py # Prompt injection generator
+                ├── roleplay_attack.py # Role-playing prompt attacker
+                ├── hotflip_attack.py # HotFlip-based token perturbation
+                ├── grad_insertion_attack.py # Gradient-guided insertion attacker
+                │
+                ├── shadow_model.py # Shadow model simulating internal LLM prompt exposure
+                │
+                └── README.md # This documentation
 
 # 🎯 Objectives
 
