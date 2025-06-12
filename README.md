@@ -5,6 +5,7 @@ This repository implements **PLeak_SecAlign**, an adversarial benchmarking suite
 ---
 ## 📁 Project Structure
 PLeak_SecAlign/
+
         │
         ├── benchmark_defense_test.py # Main script for evaluating advanced defense
         ├── advanced_defense.py # Defense module computing metrics and filtering responses
