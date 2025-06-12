@@ -49,12 +49,22 @@ The system defends against 5 classes of prompt extraction threats:
 
 Each defense is scored with the following evaluation metrics:
 
-| Metric                 | Description                                                                 |
-|------------------------|-----------------------------------------------------------------------------|
-| **Refusal Rate**       | Fraction of harmful queries refused by the defense                         |
-| **Utility Retention**  | Fraction of safe prompts answered correctly                                |
-| **Detection Accuracy** | Classification accuracy over safe vs. harmful detection                    |
-| **Adversarial Robustness** | Composite score using edit distance and semantic similarity            |
+| Metric                      | Description                                                     |
+|-----------------------------|-----------------------------------------------------------------|
+| **Refusal Rate**            | Fraction of harmful queries refused by the defense              |
+| **Utility Retention**       | Fraction of safe prompts answered correctly.                    |
+| **Detection Accuracy**      | Classification accuracy over safe vs. harmful detection.        |
+| **Adversarial Robustness**  | Composite score using edit distance and semantic similarity.    |
+
+Each attack is scored with the following evaluation metrics:
+
+| Metric                       | Description                                                      |
+|------------------------------|------------------------------------------------------------------|
+| **SM (Substring Match)**     | How much of the prompt matches exactly.                          |
+| **EM (Exact Match)**         | Whether the full system prompt is reproduced.                    |
+| **EED (Edit Distance)**      | How similar the output is at the character level.                |
+| **SS (Semantic Similarity)** | Measures the meaning similarity of leaked prompt and original.   |
+
 
 ### 📝 Example Output
 === ADVANCED DEFENSE BENCHMARK RESULTS ===
